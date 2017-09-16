@@ -1,0 +1,46 @@
+
+D:\Student\quality-control\triangle\Debug>set PROGRAM="triangle.exe" 
+
+D:\Student\quality-control\triangle\Debug>"triangle.exe"  
+Too few arguments on the command line!
+
+D:\Student\quality-control\triangle\Debug>"triangle.exe" 1 
+Too few arguments on the command line!
+
+D:\Student\quality-control\triangle\Debug>"triangle.exe" 1 1 
+Too few arguments on the command line!
+
+D:\Student\quality-control\triangle\Debug>"triangle.exe" 1a 1 1 
+One of arguments has invalid value!
+
+D:\Student\quality-control\triangle\Debug>"triangle.exe" abc 1 1 
+One of arguments has invalid value!
+
+D:\Student\quality-control\triangle\Debug>"triangle.exe" 11111111111111 1 1 
+One of arguments has invalid value!
+
+D:\Student\quality-control\triangle\Debug>"triangle.exe" 1.123 1 1 
+One of arguments has invalid value!
+
+D:\Student\quality-control\triangle\Debug>"triangle.exe" 2 5 4 
+This is a usial triangle
+
+D:\Student\quality-control\triangle\Debug>"triangle.exe" 4.33 2.13 5.15 
+This is a usial triangle
+
+D:\Student\quality-control\triangle\Debug>"triangle.exe" 2.2 2.2 1.2 
+This is an isosceles triangle
+
+D:\Student\quality-control\triangle\Debug>"triangle.exe" 7 7 5 
+This is an isosceles triangle
+
+D:\Student\quality-control\triangle\Debug>"triangle.exe" 7 7 7 
+This is an equilateral triangle
+
+D:\Student\quality-control\triangle\Debug>"triangle.exe" 5.15 5.15 5.15 
+This is an equilateral triangle
+
+D:\Student\quality-control\triangle\Debug>echo Program testing overed 
+Program testing overed
+
+D:\Student\quality-control\triangle\Debug>exit 0 
