@@ -1,8 +1,12 @@
 #include "stdafx.h"
 #include "CTriangleHandleError.h"
-#include <array>
 
 static const size_t NECESSARY_NUMBER_OF_ARGUMENTS = 4;
+
+bool CheckStringWithNumber(const std::string & subject);
+bool CheckTriangleExistance(const std::vector<double> & sides);
+bool CheckTriangleIsosceles(const std::vector<double> & sides);
+bool CheckTriangleEquilateral(const std::vector<double> & sides);
 
 int main(int argc, char * argv[])
 {
@@ -14,11 +18,10 @@ int main(int argc, char * argv[])
 		}
 
 		std::vector<double> sides(3);
-		std::regex numberCheckingRegex("[0-9]{1,10}([.]{0,1})?([0-9]{0,2})?");
 
 		for (int i = 1; i < argc; i++)
 		{
-			if (!std::regex_match(argv[i], numberCheckingRegex))
+			if (!CheckStringWithNumber(argv[i]))
 			{
 				throw CTriangleHandleError("One of arguments has invalid value!");
 			}
@@ -28,15 +31,14 @@ int main(int argc, char * argv[])
 		std::sort(sides.begin(), sides.end());
 		std::string answer;
 
-		if ((sides[0] != 0) && (sides[1] != 0) && (sides[2] != 0) && 
-			(sides[0] + sides[1] > sides[2]) && (sides[0] + sides[2] > sides[1]) && (sides[1] + sides[2] > sides[0]))
+		if (CheckTriangleExistance(sides))
 		{
 			answer = "This is a usial triangle";
-			if ((sides[1] == sides[2]) || (sides[1] == sides[0]) || (sides[2] == sides[0]))
+			if (CheckTriangleIsosceles(sides))
 			{
 				answer = "This is an isosceles triangle";
 			}
-			if ((sides[1] == sides[2]) && (sides[1] == sides[0]) && (sides[2] == sides[0]))
+			if (CheckTriangleEquilateral(sides))
 			{
 				answer = "This is an equilateral triangle";
 			}
@@ -53,4 +55,26 @@ int main(int argc, char * argv[])
 		std::cout << e.what() << std::endl;
 		return 1;
 	}
+}
+
+bool CheckStringWithNumber(const std::string & subject)
+{
+	std::regex numberCheckingRegex("[0-9]{1,10}([.]{0,1})?([0-9]{0,2})?");
+	return std::regex_match(subject, numberCheckingRegex);
+}
+
+bool CheckTriangleExistance(const std::vector<double> & sides)
+{
+	return ((sides[0] != 0) && (sides[1] != 0) && (sides[2] != 0) &&
+		(sides[0] + sides[1] > sides[2]) && (sides[0] + sides[2] > sides[1]) && (sides[1] + sides[2] > sides[0]));
+}
+
+bool CheckTriangleIsosceles(const std::vector<double> & sides)
+{
+	return ((sides[1] == sides[2]) || (sides[1] == sides[0]) || (sides[2] == sides[0]));
+}
+
+bool CheckTriangleEquilateral(const std::vector<double> & sides)
+{
+	return ((sides[1] == sides[2]) && (sides[1] == sides[0]) && (sides[2] == sides[0]));
 }

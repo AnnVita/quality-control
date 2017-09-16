@@ -14,4 +14,6 @@
 #include <vector>
 #include <sstream>
 #include <regex>
+#include <array>
+
 // TODO: reference additional headers your program requires here
