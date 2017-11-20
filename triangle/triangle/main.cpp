@@ -3,6 +3,8 @@
 
 static const size_t NECESSARY_NUMBER_OF_ARGUMENTS = 4;
 
+using namespace std;
+
 bool CheckStringWithNumber(const std::string & subject);
 bool CheckTriangleExistance(const std::vector<double> & sides);
 bool CheckTriangleIsosceles(const std::vector<double> & sides);
@@ -17,7 +19,7 @@ int main(int argc, char * argv[])
 			throw CTriangleHandleError("Too few arguments on the command line!");
 		}
 
-		std::vector<double> sides(3);
+		vector<double> sides(3);
 
 		for (int i = 1; i < argc; i++)
 		{
@@ -28,8 +30,8 @@ int main(int argc, char * argv[])
 			sides[i - 1] = atof(argv[i]);
 		}
 
-		std::sort(sides.begin(), sides.end());
-		std::string answer;
+		sort(sides.begin(), sides.end());
+		string answer;
 
 		if (CheckTriangleExistance(sides))
 		{
@@ -59,8 +61,8 @@ int main(int argc, char * argv[])
 
 bool CheckStringWithNumber(const std::string & subject)
 {
-	std::regex numberCheckingRegex("[0-9]{1,10}([.]{0,1})?([0-9]{0,2})?");
-	return std::regex_match(subject, numberCheckingRegex);
+	regex numberCheckingRegex("[0-9]{1,10}([.]{0,1})?([0-9]{0,2})?");
+	return regex_match(subject, numberCheckingRegex);
 }
 
 bool CheckTriangleExistance(const std::vector<double> & sides)
