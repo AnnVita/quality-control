@@ -1,0 +1,66 @@
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>set PROGRAM="" 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>echo BAD INPUT 
+BAD INPUT
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>""  
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" 1 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" abc 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" 1 1 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" 1_2_1            
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" 1-2-1 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" 1~2~1 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" 1a 1 1 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" IAmInteger 1 1 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" 999999999999999999 1 1 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" 1.12345 1 1 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" -1 1 1 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" -0 1 1 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" -1.2 1 1 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" 1,1 2 1 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" 1 1/2 1 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" 1 1@2 1 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" 1 1~2 1 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" /1/ 2 1 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" '1.1' 2 1 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>echo VALID INPUT 
+VALID INPUT
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" 1.123 1 1 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" 2 5 4 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" 4.33 2.13 5.15 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" 2.2 2.2 1.2 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" 7 7 5 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" 7 7 7 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" 5.15 5.15 5.15 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"" "1.1" 2 1 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>exit 0 

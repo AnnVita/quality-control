@@ -1,0 +1,94 @@
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>set PROGRAM="triangle.exe" 
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>echo BAD INPUT 
+BAD INPUT
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe"  
+Invalid number of command-line arguments. Input format: triangle.exe a b c
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" 1 
+Invalid number of command-line arguments. Input format: triangle.exe a b c
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" abc 
+Invalid number of command-line arguments. Input format: triangle.exe a b c
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" 1 1 
+Invalid number of command-line arguments. Input format: triangle.exe a b c
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" 1_2_1            
+Invalid number of command-line arguments. Input format: triangle.exe a b c
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" 1-2-1 
+Invalid number of command-line arguments. Input format: triangle.exe a b c
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" 1~2~1 
+Invalid number of command-line arguments. Input format: triangle.exe a b c
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" 1a 1 1 
+One of arguments has invalid value. Please, check the entered numbers.
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" IAmInteger 1 1 
+One of arguments has invalid value. Please, check the entered numbers.
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" 999999999999999999 1 1 
+One of arguments has invalid value. Please, check the entered numbers.
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" 1.12345 1 1 
+One of arguments has invalid value. Please, check the entered numbers.
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" -1 1 1 
+One of arguments has invalid value. Please, check the entered numbers.
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" -0 1 1 
+One of arguments has invalid value. Please, check the entered numbers.
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" -1.2 1 1 
+One of arguments has invalid value. Please, check the entered numbers.
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" 1,1 2 1 
+One of arguments has invalid value. Please, check the entered numbers.
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" 1 1/2 1 
+One of arguments has invalid value. Please, check the entered numbers.
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" 1 1@2 1 
+One of arguments has invalid value. Please, check the entered numbers.
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" 1 1~2 1 
+One of arguments has invalid value. Please, check the entered numbers.
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" /1/ 2 1 
+One of arguments has invalid value. Please, check the entered numbers.
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" '1.1' 2 1 
+One of arguments has invalid value. Please, check the entered numbers.
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>echo VALID INPUT 
+VALID INPUT
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" 1.123 1 1 
+This is an isosceles triangle
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" 2 5 4 
+This is a usial triangle
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" 4.33 2.13 5.15 
+This is a usial triangle
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" 2.2 2.2 1.2 
+This is an isosceles triangle
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" 7 7 5 
+This is an isosceles triangle
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" 7 7 7 
+This is an equilateral triangle
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" 5.15 5.15 5.15 
+This is an equilateral triangle
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>"triangle.exe" "1.1" 2 1 
+This is a usial triangle
+
+D:\Student\quality-control\quality-control\quality-control-labs\triangle\_executable_files>exit 0 
